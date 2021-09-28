@@ -1,0 +1,102 @@
+/*!
+Theme Name: Kadence Child
+Theme URI: https://www.kadencewp.com/kadence-theme/
+Template: kadence
+Author: Kadence WP
+Author URI: https://www.kadencewp.com/
+Description: A child theme for the Kadence Theme.
+Version: 1.0.0
+License: GNU General Public License v3.0 (or later)
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: kadence-child
+*/
+
+/* Theme customization starts here
+-------------------------------------------------------------- */
+
+// style tag buttons
+button.reuseTagSelectBtn___ {
+    border-radius: 10px !important;
+}
+
+.eintrag-grid {
+    .reactive-product-listing-list-item {
+        cursor: pointer;
+        display: flex;
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+        min-height: 150px;
+        .product-short-details,
+        .product-image-wrapper {
+            display: flex;
+            flex-direction: column;
+        }
+        .product-short-details {
+            justify-content: center;
+            flex-basis: 0;
+            flex-grow: 1;
+            .product-description {
+                font-size: 1rem;
+                line-height: 1.2;
+                margin-bottom: 0.3rem;
+            }
+            .product-price {
+                font-weight: bold;
+            }
+        }
+        .product-image-wrapper .item {
+            border-radius: 100%;
+            width: 20vw;
+            height: 20vw;
+            margin-right: 3vw;
+            background-size: cover;
+            background-position: center;
+            @media only screen and (max-width: 767px) {
+                width: 33vw;
+			    height: 33vw;
+            }
+        }
+    }
+}
+
+
+/* Pop-up */
+.eintrag-popup .eintrag-property-details {
+	padding: 1rem;
+}
+
+#reactive-root .reactive-popover-wrapper .re-popover-close-btn {
+    top: -14px;
+	right: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+	#reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
+		width: 85vw !important;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	#reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
+		width: 60vw !important;
+	}
+}
+
+
+
+/* Hero Eintraege */
+
+.eintrag-grid .heroeintrag {
+    background-color: lightgray;
+	background-position: center;
+    background-size: cover;
+    min-height: 300px;
+    .product-short-details {
+        max-width: 50%;
+        padding-right: 2rem;
+        text-align: right;
+        @media (max-width: 767px) {
+            padding-right: 1.5rem;
+        }
+    }
+}

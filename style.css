@@ -10,106 +10,82 @@ License: GNU General Public License v3.0 (or later)
 License URI: https://www.gnu.org/licenses/gpl-3.0.html
 Text Domain: kadence-child
 */
-
 /* Theme customization starts here
 -------------------------------------------------------------- */
-
 button.reuseTagSelectBtn___ {
-    border-radius: 10px !important;
+  border-radius: 10px !important;
 }
-
-.eintrag-grid {
-	cursor: pointer;
-}
-
 .eintrag-grid .reactive-product-listing-list-item {
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 20px;
-	min-height: 150px;
+  cursor: pointer;
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  min-height: 150px;
 }
-
-.eintrag-grid .product-short-details {
-    flex-basis: 0;
-    flex-grow: 1;
-	display: flex;
-    flex-direction: column;
-    justify-content: center;
+.eintrag-grid .reactive-product-listing-list-item .product-short-details,
+.eintrag-grid .reactive-product-listing-list-item .product-image-wrapper {
+  display: flex;
+  flex-direction: column;
 }
-
-.eintrag-grid .product-image-wrapper {
-
+.eintrag-grid .reactive-product-listing-list-item .product-short-details {
+  justify-content: center;
+  flex-basis: 0;
+  flex-grow: 1;
 }
-
-.eintrag-grid .product-image-wrapper .item {
-    border-radius: 100%;
-    width: 20vw;
-	height: 20vw;
-	margin-right: 3vw;
-	background-size: cover;
-    background-position: center;
+.eintrag-grid .reactive-product-listing-list-item .product-short-details .product-description {
+  font-size: 1rem;
+  line-height: 1.2;
+  margin-bottom: 0.3rem;
 }
-
-@media (max-width: 767px) {
-	.eintrag-grid .product-image-wrapper .item {
-		    width: 33vw;
-			height: 33vw;
-	}
+.eintrag-grid .reactive-product-listing-list-item .product-short-details .product-price {
+  font-weight: bold;
 }
-
+.eintrag-grid .reactive-product-listing-list-item .product-image-wrapper .item {
+  border-radius: 100%;
+  width: 20vw;
+  height: 20vw;
+  margin-right: 3vw;
+  background-size: cover;
+  background-position: center;
+}
+@media only screen and (max-width: 767px) {
+  .eintrag-grid .reactive-product-listing-list-item .product-image-wrapper .item {
+    width: 33vw;
+    height: 33vw;
+  }
+}
 /* Pop-up */
 .eintrag-popup .eintrag-property-details {
-	padding: 1rem;
+  padding: 1rem;
 }
-
 #reactive-root .reactive-popover-wrapper .re-popover-close-btn {
-    top: -14px;
-	right: 0px;
+  top: -14px;
+  right: 0px;
 }
-
 @media only screen and (max-width: 767px) {
-	#reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
-		width: 85vw !important;
-	}
+  #reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
+    width: 85vw !important;
+  }
 }
-
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
-	#reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
-		width: 60vw !important;
-	}
+  #reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
+    width: 60vw !important;
+  }
 }
-
-
-/*
-@media (max-width: 767px) {
-    .eintrag-grid.reactive-container-fluid {
-        padding-right: 2rem;
-        padding-left: 2rem;
-    }
-}
-*/
-
 /* Hero Eintraege */
-
 .eintrag-grid .heroeintrag {
-    background-color: lightgray;
-	background-position: center;
-    background-size: cover;
-    min-height: 300px;
+  background-color: lightgray;
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
 }
-
 .eintrag-grid .heroeintrag .product-short-details {
-    max-width: 50%;
-	padding-right: 2rem;
-    text-align: right;
+  max-width: 50%;
+  padding-right: 2rem;
+  text-align: right;
 }
-
 @media (max-width: 767px) {
-	.eintrag-grid .heroeintrag {
-
-}
-
-.eintrag-grid .heroeintrag .product-short-details {
-		padding-right: 1.5rem;
-	}
+  .eintrag-grid .heroeintrag .product-short-details {
+    padding-right: 1.5rem;
+  }
 }
