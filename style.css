@@ -1,0 +1,115 @@
+/*!
+Theme Name: Kadence Child
+Theme URI: https://www.kadencewp.com/kadence-theme/
+Template: kadence
+Author: Kadence WP
+Author URI: https://www.kadencewp.com/
+Description: A child theme for the Kadence Theme.
+Version: 1.0.0
+License: GNU General Public License v3.0 (or later)
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Text Domain: kadence-child
+*/
+
+/* Theme customization starts here
+-------------------------------------------------------------- */
+
+button.reuseTagSelectBtn___ {
+    border-radius: 10px !important;
+}
+
+.eintrag-grid {
+	cursor: pointer;
+}
+
+.eintrag-grid .reactive-product-listing-list-item {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+	min-height: 150px;
+}
+
+.eintrag-grid .product-short-details {
+    flex-basis: 0;
+    flex-grow: 1;
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.eintrag-grid .product-image-wrapper {
+
+}
+
+.eintrag-grid .product-image-wrapper .item {
+    border-radius: 100%;
+    width: 20vw;
+	height: 20vw;
+	margin-right: 3vw;
+	background-size: cover;
+    background-position: center;
+}
+
+@media (max-width: 767px) {
+	.eintrag-grid .product-image-wrapper .item {
+		    width: 33vw;
+			height: 33vw;
+	}
+}
+
+/* Pop-up */
+.eintrag-popup .eintrag-property-details {
+	padding: 1rem;
+}
+
+#reactive-root .reactive-popover-wrapper .re-popover-close-btn {
+    top: -14px;
+	right: 0px;
+}
+
+@media only screen and (max-width: 767px) {
+	#reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
+		width: 85vw !important;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1200px) {
+	#reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
+		width: 60vw !important;
+	}
+}
+
+
+/*
+@media (max-width: 767px) {
+    .eintrag-grid.reactive-container-fluid {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+*/
+
+/* Hero Eintraege */
+
+.eintrag-grid .heroeintrag {
+    background-color: lightgray;
+	background-position: center;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.eintrag-grid .heroeintrag .product-short-details {
+    max-width: 50%;
+	padding-right: 2rem;
+    text-align: right;
+}
+
+@media (max-width: 767px) {
+	.eintrag-grid .heroeintrag {
+
+}
+
+.eintrag-grid .heroeintrag .product-short-details {
+		padding-right: 1.5rem;
+	}
+}
