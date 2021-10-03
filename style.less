@@ -14,6 +14,51 @@ Text Domain: kadence-child
 /* Theme customization starts here
 -------------------------------------------------------------- */
 
+/*
+Start
+*/
+
+.ef-btn-stack {
+    > .wp-block-button {
+        flex-grow: 1;
+        > a {
+            width: 100%;
+            display: block;
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            padding: 0.5rem;
+        }
+    }
+}
+
+.ef-btn-stack--big-icon {
+    > .wp-block-button > a::before {
+        content: "";
+        height: 60px;
+        width: 60px;
+        background-color: red;
+        margin-right: 0.5rem;
+    }
+}
+
+.ef-btn-stack--small-icon {
+    > .wp-block-button > a::before {
+        content: "";
+        height: 30px;
+        width: 30px;
+        background-color: red;
+        margin-right: 0.5rem;
+    }
+    > .wp-block-button > a {
+        font-size: 1rem;
+    }
+}
+
+/*
+Food & drink menu
+*/
+
 // style tag buttons
 button.reuseTagSelectBtn___ {
     border-radius: 10px !important;
