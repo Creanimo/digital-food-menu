@@ -25,23 +25,40 @@ Start
   display: flex;
   align-items: center;
   padding: 0.5rem;
+  background-color: white;
+  color: black;
+}
+.ef-btn-stack > .wp-block-button > a:hover {
+  background-color: rgba(255, 255, 255, 0.8);
 }
 .ef-btn-stack--big-icon > .wp-block-button > a::before {
   content: "";
   height: 60px;
   width: 60px;
-  background-color: red;
   margin-right: 0.5rem;
 }
 .ef-btn-stack--small-icon > .wp-block-button > a::before {
   content: "";
   height: 30px;
   width: 30px;
-  background-color: red;
   margin-right: 0.5rem;
 }
 .ef-btn-stack--small-icon > .wp-block-button > a {
   font-size: 1rem;
+}
+.ef-btn--icon-food > a::before {
+  background-image: url('ef-icons/EisFive_Icon_Food.png');
+}
+.ef-btn--icon-drinks > a::before {
+  background-image: url('ef-icons/EisFive_Icons_Drinks.png');
+}
+.ef-btn--icon-happy > a::before {
+  background-image: url('ef-icons/EisFive_Icons_Happy.png');
+  background-size: cover;
+}
+.ef-btn--icon-sad > a::before {
+  background-image: url('ef-icons/EisFive_Icons_Sad.png');
+  background-size: cover;
 }
 /*
 Food & drink menu
