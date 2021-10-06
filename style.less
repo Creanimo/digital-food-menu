@@ -15,7 +15,40 @@ Text Domain: kadence-child
 -------------------------------------------------------------- */
 
 /*
-Start
+General Classes
+*/
+
+.single-content {
+    .ef-margin-small {
+        margin-bottom: 0.5rem;
+    }
+    
+    .ef-margin-medium {
+        margin-bottom: 1rem;
+    }
+    
+    .ef-margin-large {
+        margin-bottom: 2rem;
+    }
+}
+
+.ef-menu-start {
+    p {
+        margin-bottom: 1rem;
+    }
+    a {
+        color: black;
+    }
+    h1, h2, h3 {
+        margin: 3rem 0 0.5rem 0;
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+}
+
+/*
+Start Page
 */
 
 .ef-btn-stack {
@@ -35,6 +68,14 @@ Start
             }
         }
     }
+}
+
+.ef-btn-stack--small > .wp-block-button > a {
+    min-height: calc(30px + 1rem);
+}
+
+.ef-btn-stack--big > .wp-block-button > a {
+    min-height: calc(60px + 1rem);
 }
 
 .ef-btn-stack--big-icon {
@@ -75,7 +116,7 @@ Start
 }
 
 /*
-Food & drink menu
+Food & Drink Menu
 */
 
 // style tag buttons

@@ -13,7 +13,35 @@ Text Domain: kadence-child
 /* Theme customization starts here
 -------------------------------------------------------------- */
 /*
-Start
+General Classes
+*/
+.single-content .ef-margin-small {
+  margin-bottom: 0.5rem;
+}
+.single-content .ef-margin-medium {
+  margin-bottom: 1rem;
+}
+.single-content .ef-margin-large {
+  margin-bottom: 2rem;
+}
+.ef-menu-start p {
+  margin-bottom: 1rem;
+}
+.ef-menu-start a {
+  color: black;
+}
+.ef-menu-start h1,
+.ef-menu-start h2,
+.ef-menu-start h3 {
+  margin: 3rem 0 0.5rem 0;
+}
+.ef-menu-start h1:first-child,
+.ef-menu-start h2:first-child,
+.ef-menu-start h3:first-child {
+  margin-top: 0;
+}
+/*
+Start Page
 */
 .ef-btn-stack > .wp-block-button {
   flex-grow: 1;
@@ -30,6 +58,12 @@ Start
 }
 .ef-btn-stack > .wp-block-button > a:hover {
   background-color: rgba(255, 255, 255, 0.8);
+}
+.ef-btn-stack--small > .wp-block-button > a {
+  min-height: calc(30px + 1rem);
+}
+.ef-btn-stack--big > .wp-block-button > a {
+  min-height: calc(60px + 1rem);
 }
 .ef-btn-stack--big-icon > .wp-block-button > a::before {
   content: "";
@@ -61,7 +95,7 @@ Start
   background-size: cover;
 }
 /*
-Food & drink menu
+Food & Drink Menu
 */
 button.reuseTagSelectBtn___ {
   border-radius: 10px !important;
