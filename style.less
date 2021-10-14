@@ -1,24 +1,44 @@
-/*!
-Theme Name: Kadence Child
-Theme URI: https://www.kadencewp.com/kadence-theme/
-Template: kadence
-Author: Kadence WP
-Author URI: https://www.kadencewp.com/
-Description: A child theme for the Kadence Theme.
-Version: 1.0.0
-License: GNU General Public License v3.0 (or later)
-License URI: https://www.gnu.org/licenses/gpl-3.0.html
-Text Domain: kadence-child
+/*
+Theme Name: Zephyr Child
+Template: Zephyr
+Version: 1.0
+Author:	UpSolution
+Theme URI: http://zephyr.us-themes.com/
+Author URI: http://us-themes.com/
 */
 
 /* Theme customization starts here
 -------------------------------------------------------------- */
 
 /*
+Variables
+*/
+
+// Palette
+@ef-blue: #b0cfe9;
+@ef-pink: #f3cdd7;
+
+@ef-general-text-color: black;
+
+/*
 General Classes
 */
 
-.single-content {
+html.ef-digitale-karte {
+    font-family: 'PT Sans', sans-serif;
+    font-size: 17px;
+    line-height: 1.2;
+}
+
+.page-template-template-digitale-karte {
+    .ef-content-container {
+        width: 100vw;
+        max-width: 600px;
+        min-height: 100vh;
+        margin: 0 auto;
+        background-color: @ef-blue;
+        padding: 10px 10px 30px 10px;
+    }
     .ef-margin-small {
         margin-bottom: 0.5rem;
     }
@@ -30,20 +50,32 @@ General Classes
     .ef-margin-large {
         margin-bottom: 2rem;
     }
-}
 
-.ef-menu-start {
     p {
         margin-bottom: 1rem;
     }
+
     a {
-        color: black;
+        color: @ef-general-text-color;
+        text-decoration: underline
     }
+
     h1, h2, h3 {
+        font-family: "Passion One";
         margin: 3rem 0 0.5rem 0;
+        padding: 0;
         &:first-child {
             margin-top: 0;
         }
+    }
+    h1 {
+        font-size: 2.4rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.6rem;
     }
 }
 
@@ -54,15 +86,18 @@ Start Page
 .ef-btn-stack {
     > .wp-block-button {
         flex-grow: 1;
+        margin-bottom: 0;
         > a {
             width: 100%;
             display: block;
+            border-radius: 10px;
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
             padding: 0.5rem;
             background-color: white;
-            color: black;
+            color: @ef-general-text-color;
+            text-decoration: none;
             &:hover {
                 background-color: rgba(255, 255, 255, 0.8);
             }
@@ -205,4 +240,263 @@ button.reuseTagSelectBtn___ {
             padding-right: 1.5rem;
         }
     }
+}
+
+/*
+Zephyr Fixes by Creanimo
+*/
+
+.ush_menu_1.type_desktop .w-nav-list .menu-item,
+.ush_menu_1.type_mobile .w-nav-anchor {
+    font-size: 28px !important;
+    font-family: 'Passion One';
+}
+
+.header_ver .ush_menu_1.type_desktop .w-nav-list.level_1 .menu-item a {
+    padding-top: 10px !important;
+    padding-bottom: 7px !important;
+}
+
+
+/*
+Zephyr CSS by Orthsmedia
+*/
+
+.header_ver .w-nav-anchor.level_1 {
+    letter-spacing: 0.05rem;
+}
+.w-nav.type_desktop .w-nav-anchor.level_1 .w-nav-arrow:before {
+    font-size: 1.7rem;
+    margin-left: 0.4em;
+    color: #bdcede;
+    line-height: 1.2;
+}
+.w-nav.type_desktop .w-nav-list.level_2 {
+    padding: 0;
+    border-radius: 0px;
+}
+.header_ver .ush_menu_1.type_desktop .w-nav-list.level_1>.menu-item>a {
+    border-bottom: 1px solid rgba(152, 187, 219, 0.15) !important;
+}
+.header_ver .ush_menu_1.type_desktop .w-nav-list.level_1>li:first-child.menu-item>a {
+    border-top: 1px solid rgba(152, 187, 219, 0.15) !important;
+}
+.actionbox {
+	background-color: #ec8987;
+    border: 4px dashed #fefefd;
+}
+.w-nav.type_mobile.m_layout_fullscreen .w-nav-control.active + .w-nav-list.level_1 {
+    background: rgba(222, 73, 73, 0.93) !important;
+    color: #fff !important;
+}
+.kontaktbox td, .kontaktbox th {
+    padding: 0.6rem 0rem;
+}
+.kontaktbox td {
+	border-color: #ec8987;
+}
+.mapframe {
+	padding: 3px;
+    border: 1px solid #fff;
+}
+.w-form-row.check_wrong .w-form-row-state {
+    color: #ffefae;
+}
+.w-form-row.check_wrong input, .w-form-row.check_wrong textarea, .w-form-row.check_wrong select {
+    box-shadow: none;
+}
+.w-form-message.type_success {
+    padding: 0.6rem 1rem;
+    opacity: 1;
+    color: #ffffff;
+    background-color: #3fc36f;
+    border-radius: 0.4rem;
+    display: inline-block;
+    margin-top: 30px;
+}
+.w-form-checkbox, .w-form-radio {
+    border-color: #ffffff!important;
+    background: #d35346;
+}
+.w-form-row-field>i {
+    opacity: 0.8;
+    color: #ab302d;
+}
+.page-id-51 input, .page-id-51 select, .page-id-51 textarea {
+    border-color: #d55753;
+}
+.page-id-51 select option {
+    color: #000;
+    padding-left:5px;
+}
+.w-form-row.focused i {
+	color:#c3e3ff !important;
+}
+.w-form-row.focused .w-form-row-field-bar:before, .w-form-row.focused .w-form-row-field-bar:after, .w-form-row input:checked + .w-form-radio, .w-form-row.for_radio label>input:checked + i {
+	background-color:#c3e3ff !important;
+ }
+.w-form-row input:checked + .w-form-checkbox {
+  	background-color: #d55753 !important;
+}
+.w-form-row-label {
+    opacity: 0.76;
+}
+.w-form-row {
+    margin-bottom: 2rem;
+}
+.page-id-51 .w-tabs-section-content-h, .page-id-56 .w-tabs-section-content-h, .page-id-23 .w-tabs-section-content-h {
+    padding-top: 0;
+}
+.page-id-51 .w-tabs-item.active, .page-id-56 .w-tabs-item.active, .page-id-23 .w-tabs-item.active {
+    color: #ffffff;
+    background: #ec8987;
+}
+.page-id-51 .w-tabs-list-bar, .page-id-56 .w-tabs-list-bar, .page-id-23 .w-tabs-list-bar {
+    background-color: #acd7fd;
+}
+.page-id-51 .w-tabs.layout_default .w-tabs-list-bar, .page-id-56 .w-tabs.layout_default .w-tabs-list-bar, .page-id-23 .w-tabs.layout_default .w-tabs-list-bar {
+    height: 4px;
+}
+.page-id-23 .w-tabs-list {
+	display:none;
+}
+.w-tabs.accordion .w-tabs-section-header, .not-touch .w-tabs.accordion .w-tabs-section-header {
+    color: #ffffff !important;
+    background: #ec8987;
+	font-size: 1.2rem !important;
+}
+.w-tabs.accordion .active .w-tabs-section-header, .no-touch .w-tabs.accordion .active .w-tabs-section-header {
+    background: #98bce0 !important;
+}
+.w-tabs.accordion .w-tabs-section-header:hover {
+    color: #ffffff;
+    background: #f59997;
+}
+.mietbox {
+	padding:2rem 2rem 0 2rem;
+}
+.mietboxzwei {
+	padding:0 2rem 2rem 2rem;
+} 
+@media screen and (max-width: 600px) {
+.page-id-56 .w-tabs.accordion .w-tabs-section-content-h, .page-id-51 .w-tabs.accordion .w-tabs-section-content-h {
+    padding-top: 0;
+}
+.mietbox {
+	padding: 1rem 0 0 0;
+}
+.mietboxzwei {
+	padding: 0 0 1rem 0;
+}
+.page-id-23 .mietbox {
+    padding: 1.5rem 1.5rem 2rem;
+}
+.page-id-23 .mietboxzwei {
+    padding: 1.5rem 1.5rem 2rem;
+}
+}
+.eissorten {
+    color: #ffffff;
+    border: 1px solid #98bce0;
+    display: inline-block;
+    padding: 0px 15px;
+    background: #98bbdb;
+    line-height: 2rem;
+    cursor: pointer;
+    border-radius: 0.3em;
+    font-weight: bold;
+    margin-right: 5px;
+}
+a.eissorten:hover {
+    color: #fff !important;
+    box-shadow: 0 0.15em 0.3em rgba(0,0,0,0.4);
+}
+.vitrine img {
+	border-radius: 4px;
+}
+.mfp-title {
+	display:none;
+}
+.ribbon-eroeffnung {
+	position: absolute;
+    width: 150px;
+    height: 150px;
+    background: #e85252;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding-top: 50px;
+    line-height: 1.6rem;
+    top: 0px;
+    right: 20px;
+    box-shadow: 0 0 20px 0 #444;
+}
+.l-preloader {
+	background-color: rgba(255,255,255,1) !important;
+}
+/*COOKIESTUFF*/
+
+#cookie-notice {
+    background-color: #98BBDB !important;
+    line-height: 24px
+}
+.cookie-notice-container {
+    text-align: center;
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.2);
+}
+#cookie-notice .button.wp-default {
+    background-color: #fff !important;
+    color: #424242 !important;
+    border-color: rgba(255, 255, 255, 0.2);
+    font-family: 'PT Sans', sans-serif !important;
+    line-height: 20px;
+    padding: 2px 11px;
+}
+#cookie-notice .fas {
+	color:#76cc97;
+}
+#cookie-notice .fas.fa-times {
+	color:#c39b9b;
+}
+span#cn-notice-icon {
+	display:none;
+}
+@media (max-width: 901px) {
+    #cn-notice-text{
+        display:block !important;
+        margin-bottom: 14px !important;
+        line-height: 18px
+    }
+    .cookie-notice-container {
+    padding: 12px;
+    text-align: center;
+    }
+    .w-toplink.active {
+    display:none;
+    }
+    .eissorten {
+    display: block;
+    max-width: 80px;
+    margin-bottom: 10px;
+}
+}
+#cn-more-info.wp-default:after {
+	content: '\f054';
+	font-family: 'fontawesome';
+    font-weight: 900;
+    margin-left:5px;
+}
+#cn-refuse-cookie.wp-default:after {
+	content: '\f00d';
+	font-family: 'fontawesome';
+    font-weight: 900;
+    margin-left:5px;
+}
+#cn-accept-cookie.wp-default:after {
+	content: '\f00c';
+	font-family: 'fontawesome';
+    font-weight: 900;
+    margin-left:5px;
 }
