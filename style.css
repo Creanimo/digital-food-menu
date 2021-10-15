@@ -144,6 +144,9 @@ button.reuseTagSelectBtn___ {
   flex-basis: 0;
   flex-grow: 1;
 }
+.eintrag-grid .reactive-product-listing-list-item .product-short-details h3 a {
+  text-decoration: none;
+}
 .eintrag-grid .reactive-product-listing-list-item .product-short-details .product-description {
   font-size: 1rem;
   line-height: 1.2;
@@ -187,13 +190,13 @@ button.reuseTagSelectBtn___ {
 }
 /* Hero Eintraege */
 .eintrag-grid .heroeintrag {
-  background-color: lightgray;
-  background-position: center;
-  background-size: cover;
+  background-color: #f3cdd7;
   min-height: 300px;
+  position: relative;
+  padding-right: 0;
 }
 .eintrag-grid .heroeintrag .product-short-details {
-  max-width: 50%;
+  width: 50%;
   padding-right: 2rem;
   text-align: right;
 }
@@ -201,6 +204,20 @@ button.reuseTagSelectBtn___ {
   .eintrag-grid .heroeintrag .product-short-details {
     padding-right: 1.5rem;
   }
+}
+.eintrag-grid .heroeintrag .product-image-wrapper {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  width: 50%;
+}
+.eintrag-grid .heroeintrag .product-image-wrapper .item {
+  background-position-x: right;
+  position: absolute;
+  margin-right: 0;
+  top: -35%;
+  width: 550px;
+  height: 550px;
 }
 /*
 Zephyr Fixes by Creanimo
