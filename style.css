@@ -243,6 +243,10 @@ Zephyr Fixes by Creanimo
   padding-top: 10px !important;
   padding-bottom: 7px !important;
 }
+.l-subheader-h i.fas.fa-phone,
+.l-subheader-h i.fas.fa-phone ~ a.w-text-value {
+  display: none;
+}
 /*
 Zephyr CSS by Orthsmedia
 */
