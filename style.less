@@ -37,7 +37,9 @@ html.ef-digitale-karte {
         min-height: 100vh;
         margin: 0 auto;
         background-color: @ef-blue;
-        padding: 10px 10px 30px 10px;
+        .ef-digitale-karte {
+            padding: 10px;
+        }
     }
     .ef-margin-small {
         margin-bottom: 0.5rem;
@@ -159,6 +161,19 @@ button.reuseTagSelectBtn___ {
     border-radius: 10px !important;
 }
 
+// grid padding
+.react-grid-item > div > div {
+    // reset inline style
+    padding: 0 !important;
+}
+// counteracting avada grid
+@media (max-width: 767px) {
+    .page-template-template-digitale-karte .reactive-container-fluid {
+        padding-right: 2rem;
+        padding-left: 2rem;
+    }
+}
+
 .eintrag-grid {
     .reactive-product-listing-list-item {
         cursor: pointer;
@@ -172,16 +187,15 @@ button.reuseTagSelectBtn___ {
             flex-direction: column;
         }
         .product-short-details {
-            h3 a {
-                text-decoration: none;
-            }
             justify-content: center;
             flex-basis: 0;
             flex-grow: 1;
             .product-description {
                 font-size: 1rem;
                 line-height: 1.2;
-                margin-bottom: 0.3rem;
+                p {
+                    margin-bottom: 0.5rem
+                }
             }
             .product-price {
                 font-weight: bold;
@@ -217,12 +231,14 @@ button.reuseTagSelectBtn___ {
 @media only screen and (max-width: 767px) {
 	#reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
 		width: 85vw !important;
+        height: auto;
 	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
 	#reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
 		width: 60vw !important;
+        height: auto;
 	}
 }
 
@@ -252,9 +268,9 @@ button.reuseTagSelectBtn___ {
             background-position-x: right;
             position: absolute;
             margin-right: 0;
-            top: -35%;
-            width: 550px;
-            height: 550px;
+            top: -10%;
+            width: 400px;
+            height: 400px;
         }
     }
 }

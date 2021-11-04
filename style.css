@@ -25,7 +25,9 @@ html.ef-digitale-karte {
   min-height: 100vh;
   margin: 0 auto;
   background-color: #b0cfe9;
-  padding: 10px 10px 30px 10px;
+}
+.page-template-template-digitale-karte .ef-content-container .ef-digitale-karte {
+  padding: 10px;
 }
 .page-template-template-digitale-karte .ef-margin-small {
   margin-bottom: 0.5rem;
@@ -127,6 +129,15 @@ Food & Drink Menu
 button.reuseTagSelectBtn___ {
   border-radius: 10px !important;
 }
+.react-grid-item > div > div {
+  padding: 0 !important;
+}
+@media (max-width: 767px) {
+  .page-template-template-digitale-karte .reactive-container-fluid {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+}
 .eintrag-grid .reactive-product-listing-list-item {
   cursor: pointer;
   display: flex;
@@ -144,13 +155,12 @@ button.reuseTagSelectBtn___ {
   flex-basis: 0;
   flex-grow: 1;
 }
-.eintrag-grid .reactive-product-listing-list-item .product-short-details h3 a {
-  text-decoration: none;
-}
 .eintrag-grid .reactive-product-listing-list-item .product-short-details .product-description {
   font-size: 1rem;
   line-height: 1.2;
-  margin-bottom: 0.3rem;
+}
+.eintrag-grid .reactive-product-listing-list-item .product-short-details .product-description p {
+  margin-bottom: 0.5rem;
 }
 .eintrag-grid .reactive-product-listing-list-item .product-short-details .product-price {
   font-weight: bold;
@@ -181,11 +191,13 @@ button.reuseTagSelectBtn___ {
 @media only screen and (max-width: 767px) {
   #reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
     width: 85vw !important;
+    height: auto;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   #reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
     width: 60vw !important;
+    height: auto;
   }
 }
 /* Hero Eintraege */
@@ -215,9 +227,9 @@ button.reuseTagSelectBtn___ {
   background-position-x: right;
   position: absolute;
   margin-right: 0;
-  top: -35%;
-  width: 550px;
-  height: 550px;
+  top: -10%;
+  width: 400px;
+  height: 400px;
 }
 /*
 Zephyr Fixes by Creanimo
