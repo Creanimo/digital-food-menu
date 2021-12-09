@@ -200,6 +200,22 @@ button.reuseTagSelectBtn___ {
     height: auto;
   }
 }
+/* No image entries */
+.eintrag-grid .reactive-product-listing-list-item.no-image {
+  min-height: auto;
+}
+.eintrag-grid .reactive-product-listing-list-item.no-image .product-short-details {
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: flex-start;
+}
+.eintrag-grid .reactive-product-listing-list-item.no-image .title-area {
+  width: 80%;
+}
+.eintrag-grid .reactive-product-listing-list-item.no-image .product-price {
+  width: 20%;
+  text-align: right;
+}
 /* Hero Eintraege */
 .eintrag-grid .heroeintrag {
   background-color: #f3cdd7;
