@@ -224,8 +224,8 @@ button.reuseTagSelectBtn___ {
 }
 
 #reactive-root .reactive-popover-wrapper .re-popover-close-btn {
-    top: -14px;
-	right: 0px;
+    top: 4px;
+	right: 10px;
 }
 
 @media only screen and (max-width: 767px) {
@@ -252,11 +252,16 @@ button.reuseTagSelectBtn___ {
         align-items: flex-start;
     }
     .title-area {
-        width: 80%;
+        flex-grow: 1;
+        margin-right: 1rem;
     }
     .product-price {
-        width: 20%;
+        width: auto;
         text-align: right;
+        margin-bottom: 0.3rem;
+    }
+    .product-description {
+        width: 100%;
     }
 }
 

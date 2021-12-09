@@ -185,8 +185,8 @@ button.reuseTagSelectBtn___ {
   padding: 1rem;
 }
 #reactive-root .reactive-popover-wrapper .re-popover-close-btn {
-  top: -14px;
-  right: 0px;
+  top: 4px;
+  right: 10px;
 }
 @media only screen and (max-width: 767px) {
   #reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
@@ -210,11 +210,16 @@ button.reuseTagSelectBtn___ {
   align-items: flex-start;
 }
 .eintrag-grid .reactive-product-listing-list-item.no-image .title-area {
-  width: 80%;
+  flex-grow: 1;
+  margin-right: 1rem;
 }
 .eintrag-grid .reactive-product-listing-list-item.no-image .product-price {
-  width: 20%;
+  width: auto;
   text-align: right;
+  margin-bottom: 0.3rem;
+}
+.eintrag-grid .reactive-product-listing-list-item.no-image .product-description {
+  width: 100%;
 }
 /* Hero Eintraege */
 .eintrag-grid .heroeintrag {
