@@ -20,11 +20,15 @@ Variables
 
 @ef-general-text-color: black;
 
+// Boxes
+@ef-border-radius: 10px;
+
 /*
 General Classes
 */
 
 html.ef-digitale-karte {
+    hyphens: auto;
     font-family: 'PT Sans', sans-serif;
     font-size: 17px;
     line-height: 1.2;
@@ -41,6 +45,11 @@ html.ef-digitale-karte {
             padding: 10px;
         }
     }
+
+    .ef-margin-none {
+        margin-bottom: 0;
+    }
+
     .ef-margin-small {
         margin-bottom: 0.5rem;
     }
@@ -82,6 +91,25 @@ html.ef-digitale-karte {
 }
 
 /*
+Contact Form Button
+*/
+
+.ef-digitale-karte {
+    .fluentform .ff_btn_style {
+        border-radius: @ef-border-radius;
+        background-color: @ef-pink;
+        color: black;
+        font-size: 1.5rem;
+        font-family: "Passion One";
+        font-weight: bold;
+    }
+    .fluentform .ff-el-form-control {
+        border-radius: @ef-border-radius;
+        background-color: white !important;
+    }
+}
+
+/*
 Start Page
 */
 
@@ -92,7 +120,7 @@ Start Page
         > a {
             width: 100%;
             display: block;
-            border-radius: 10px;
+            border-radius: @ef-border-radius;
             margin-bottom: 0.5rem;
             display: flex;
             align-items: center;
@@ -136,12 +164,21 @@ Start Page
     }
 }
 
+.ef-btn-stack > .wp-block-button.ef-btn--inactive-tab > a {
+    background-color: rgba(255, 255, 255, 0.5);
+    &:hover {
+        background-color: white;
+    }
+}
+
 // Icons
 .ef-btn--icon-food > a::before {
     background-image: url('ef-icons/EisFive_Icon_Food.png');
+    background-size: cover;
 }
 .ef-btn--icon-drinks > a::before {
     background-image: url('ef-icons/EisFive_Icons_Drinks.png');
+    background-size: cover;
 }
 .ef-btn--icon-happy > a::before {
     background-image: url('ef-icons/EisFive_Icons_Happy.png');
@@ -172,9 +209,13 @@ Start Page
 Food & Drink Menu
 */
 
+.page-template-template-digitale-karte .reactiveGridContents___ {
+    padding: 0;
+}
+
 // style tag buttons
 button.reuseTagSelectBtn___ {
-    border-radius: 10px !important;
+    border-radius: @ef-border-radius !important;
 }
 
 // grid padding
@@ -235,6 +276,11 @@ button.reuseTagSelectBtn___ {
 
 
 /* Pop-up */
+.rq-popover-fullscreen-wrapper {
+    height: 85vh !important;
+    overflow: auto;
+}
+
 .eintrag-popup .eintrag-property-details {
 	padding: 1rem;
 }
@@ -247,34 +293,36 @@ button.reuseTagSelectBtn___ {
 @media only screen and (max-width: 767px) {
 	#reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
 		width: 85vw !important;
-        height: auto;
 	}
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
 	#reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
 		width: 60vw !important;
-        height: auto;
 	}
 }
 
 /* No image entries */
 
 .eintrag-grid .reactive-product-listing-list-item.no-image {
+    padding-left: 3rem;
+    padding-right: 3rem;
     min-height: auto;
+
     .product-short-details {
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-items: flex-start;
+        .product-details-row {
+            display: flex;
+            align-items: flex-start;
+        }
     }
     .title-area {
         flex-grow: 1;
         margin-right: 1rem;
     }
     .product-price {
-        width: auto;
+        width: 5rem;
         text-align: right;
-        margin-bottom: 0.3rem;
+        margin-top: 0.4rem;
     }
     .product-description {
         width: 100%;

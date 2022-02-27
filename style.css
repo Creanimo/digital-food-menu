@@ -15,6 +15,7 @@ Variables
 General Classes
 */
 html.ef-digitale-karte {
+  hyphens: auto;
   font-family: 'PT Sans', sans-serif;
   font-size: 17px;
   line-height: 1.2;
@@ -28,6 +29,9 @@ html.ef-digitale-karte {
 }
 .page-template-template-digitale-karte .ef-content-container .ef-digitale-karte {
   padding: 10px;
+}
+.page-template-template-digitale-karte .ef-margin-none {
+  margin-bottom: 0;
 }
 .page-template-template-digitale-karte .ef-margin-small {
   margin-bottom: 0.5rem;
@@ -65,6 +69,21 @@ html.ef-digitale-karte {
 }
 .page-template-template-digitale-karte h3 {
   font-size: 1.6rem;
+}
+/*
+Contact Form Button
+*/
+.ef-digitale-karte .fluentform .ff_btn_style {
+  border-radius: 10px;
+  background-color: #f3cdd7;
+  color: black;
+  font-size: 1.5rem;
+  font-family: "Passion One";
+  font-weight: bold;
+}
+.ef-digitale-karte .fluentform .ff-el-form-control {
+  border-radius: 10px;
+  background-color: white !important;
 }
 /*
 Start Page
@@ -109,11 +128,19 @@ Start Page
 .ef-btn-stack--small-icon > .wp-block-button > a {
   font-size: 1rem;
 }
+.ef-btn-stack > .wp-block-button.ef-btn--inactive-tab > a {
+  background-color: rgba(255, 255, 255, 0.5);
+}
+.ef-btn-stack > .wp-block-button.ef-btn--inactive-tab > a:hover {
+  background-color: white;
+}
 .ef-btn--icon-food > a::before {
   background-image: url('ef-icons/EisFive_Icon_Food.png');
+  background-size: cover;
 }
 .ef-btn--icon-drinks > a::before {
   background-image: url('ef-icons/EisFive_Icons_Drinks.png');
+  background-size: cover;
 }
 .ef-btn--icon-happy > a::before {
   background-image: url('ef-icons/EisFive_Icons_Happy.png');
@@ -142,6 +169,9 @@ Start Page
 /*
 Food & Drink Menu
 */
+.page-template-template-digitale-karte .reactiveGridContents___ {
+  padding: 0;
+}
 button.reuseTagSelectBtn___ {
   border-radius: 10px !important;
 }
@@ -197,6 +227,10 @@ button.reuseTagSelectBtn___ {
   }
 }
 /* Pop-up */
+.rq-popover-fullscreen-wrapper {
+  height: 85vh !important;
+  overflow: auto;
+}
 .eintrag-popup .eintrag-property-details {
   padding: 1rem;
 }
@@ -207,22 +241,21 @@ button.reuseTagSelectBtn___ {
 @media only screen and (max-width: 767px) {
   #reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
     width: 85vw !important;
-    height: auto;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 1200px) {
   #reactive-root .full.previewPopUp___ .reactive-popover-wrapper .rq-popover-fullscreen-wrapper {
     width: 60vw !important;
-    height: auto;
   }
 }
 /* No image entries */
 .eintrag-grid .reactive-product-listing-list-item.no-image {
+  padding-left: 3rem;
+  padding-right: 3rem;
   min-height: auto;
 }
-.eintrag-grid .reactive-product-listing-list-item.no-image .product-short-details {
-  flex-wrap: wrap;
-  flex-direction: row;
+.eintrag-grid .reactive-product-listing-list-item.no-image .product-short-details .product-details-row {
+  display: flex;
   align-items: flex-start;
 }
 .eintrag-grid .reactive-product-listing-list-item.no-image .title-area {
@@ -230,9 +263,9 @@ button.reuseTagSelectBtn___ {
   margin-right: 1rem;
 }
 .eintrag-grid .reactive-product-listing-list-item.no-image .product-price {
-  width: auto;
+  width: 5rem;
   text-align: right;
-  margin-bottom: 0.3rem;
+  margin-top: 0.4rem;
 }
 .eintrag-grid .reactive-product-listing-list-item.no-image .product-description {
   width: 100%;
