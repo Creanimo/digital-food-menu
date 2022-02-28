@@ -51,14 +51,19 @@ html.ef-digitale-karte {
 }
 .page-template-template-digitale-karte h1,
 .page-template-template-digitale-karte h2,
-.page-template-template-digitale-karte h3 {
+.page-template-template-digitale-karte h3,
+.page-template-template-digitale-karte h4,
+.page-template-template-digitale-karte h5 {
   font-family: "Passion One";
+  line-height: 1.1;
   margin: 3rem 0 0.5rem 0;
   padding: 0;
 }
 .page-template-template-digitale-karte h1:first-child,
 .page-template-template-digitale-karte h2:first-child,
-.page-template-template-digitale-karte h3:first-child {
+.page-template-template-digitale-karte h3:first-child,
+.page-template-template-digitale-karte h4:first-child,
+.page-template-template-digitale-karte h5:first-child {
   margin-top: 0;
 }
 .page-template-template-digitale-karte h1 {
@@ -164,6 +169,10 @@ Start Page
 }
 .ef-btn--icon-star > a::before {
   background-image: url('ef-icons/EisFive_Icons_Star.png');
+  background-size: cover;
+}
+.ef-btn--icon-specials > a::before {
+  background-image: url('ef-icons/EisFive_Icons_Specials.png');
   background-size: cover;
 }
 /*
@@ -300,6 +309,20 @@ button.reuseTagSelectBtn___ {
   top: -10%;
   width: 400px;
   height: 400px;
+}
+/* Kapiteltrenner */
+.eintrag-grid .kapiteleintrag {
+  cursor: auto;
+}
+.eintrag-grid .kapiteleintrag .title-area {
+  padding-right: 1rem;
+  text-align: center;
+}
+.eintrag-grid .kapiteleintrag .title-area .title {
+  text-transform: uppercase;
+}
+.eintrag-grid .kapiteleintrag .product-image-wrapper .item {
+  margin-right: 0.5rem;
 }
 /*
 Zephyr Fixes by Creanimo
