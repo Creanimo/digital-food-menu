@@ -312,6 +312,8 @@ button.reuseTagSelectBtn___ {
 }
 /* Kapiteltrenner */
 .eintrag-grid .kapiteleintrag {
+  border-top: 2rem solid white;
+  padding-top: 2rem;
   cursor: auto;
 }
 .eintrag-grid .kapiteleintrag .title-area {

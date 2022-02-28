@@ -23,6 +23,11 @@ Variables
 // Boxes
 @ef-border-radius: 10px;
 
+// Spacings
+@spacing-small: 0.5rem;
+@spacing-medium: 1rem;
+@spacing-large: 2rem;
+
 /*
 General Classes
 */
@@ -51,15 +56,15 @@ html.ef-digitale-karte {
     }
 
     .ef-margin-small {
-        margin-bottom: 0.5rem;
+        margin-bottom: @spacing-small;
     }
     
     .ef-margin-medium {
-        margin-bottom: 1rem;
+        margin-bottom: @spacing-medium;
     }
     
     .ef-margin-large {
-        margin-bottom: 2rem;
+        margin-bottom: @spacing-large;
     }
 
     p {
@@ -122,10 +127,10 @@ Start Page
             width: 100%;
             display: block;
             border-radius: @ef-border-radius;
-            margin-bottom: 0.5rem;
+            margin-bottom: @spacing-small;
             display: flex;
             align-items: center;
-            padding: 0.5rem;
+            padding: @spacing-small;
             background-color: white;
             color: @ef-general-text-color;
             text-decoration: none;
@@ -149,7 +154,7 @@ Start Page
         content: "";
         height: 60px;
         width: 60px;
-        margin-right: 0.5rem;
+        margin-right: @spacing-small;
     }
 }
 
@@ -158,7 +163,7 @@ Start Page
         content: "";
         height: 30px;
         width: 30px;
-        margin-right: 0.5rem;
+        margin-right: @spacing-small;
     }
     > .wp-block-button > a {
         font-size: 1rem;
@@ -231,8 +236,8 @@ button.reuseTagSelectBtn___ {
 // counteracting avada grid
 @media (max-width: 767px) {
     .page-template-template-digitale-karte .reactive-container-fluid {
-        padding-right: 2rem;
-        padding-left: 2rem;
+        padding-right: @spacing-large;
+        padding-left: @spacing-large;
     }
 }
 
@@ -241,7 +246,7 @@ button.reuseTagSelectBtn___ {
         cursor: pointer;
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 2rem;
+        margin-bottom: @spacing-large;
         min-height: 150px;
         .product-short-details,
         .product-image-wrapper {
@@ -267,7 +272,7 @@ button.reuseTagSelectBtn___ {
             border-radius: 100%;
             width: 250px;
             height: 250px;
-            margin-right: 2rem;
+            margin-right: @spacing-large;
             background-size: cover;
             background-position: center;
             @media only screen and (max-width: 767px) {
@@ -368,6 +373,8 @@ button.reuseTagSelectBtn___ {
 /* Kapiteltrenner */
 
 .eintrag-grid .kapiteleintrag {
+    border-top: @spacing-large solid white;
+    padding-top: @spacing-large;
     cursor: auto;
     .title-area {
         padding-right: 1rem;
