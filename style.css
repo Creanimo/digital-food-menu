@@ -12,6 +12,15 @@ Author URI: http://us-themes.com/
 Variables
 */
 /*
+Extra Script Font
+*/
+@font-face {
+  font-family: 'Playlist-Script';
+  src: url('Playlist-Script.ttf.woff') format('woff'), url('Playlist-Script.ttf.svg#Playlist-Script') format('svg'), url('Playlist-Script.ttf.eot'), url('Playlist-Script.ttf.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+/*
 General Classes
 */
 html.ef-digitale-karte {
@@ -321,9 +330,12 @@ button.reuseTagSelectBtn___ {
   text-align: center;
 }
 .eintrag-grid .kapiteleintrag .title-area .title {
-  text-transform: uppercase;
+  font-weight: normal;
+  font-size: 3rem;
+  font-family: 'Playlist-Script', sans-serif;
 }
 .eintrag-grid .kapiteleintrag .product-image-wrapper .item {
+  display: none;
   margin-right: 0.5rem;
 }
 /*
