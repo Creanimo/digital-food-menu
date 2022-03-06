@@ -244,6 +244,50 @@ button.reuseTagSelectBtn___ {
     margin-right: 1.5rem;
   }
 }
+/* animation magnifying glass */
+.eintrag-grid .reactive-product-listing-list-item:not(.heroeintrag):nth-child(-n+5) .product-image-wrapper .item:before {
+  content: url(ef-icons/EisFive_Icons_Hand-pointer.png);
+  position: absolute;
+  top: 29%;
+  left: 24%;
+  border-radius: 50%;
+  animation-name: thumbnail-magnifying-icon;
+  animation-duration: 2.2s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes thumbnail-magnifying-icon {
+  0% {
+    transform: translateY(0) translateX(0) scale(0%);
+    opacity: 0;
+  }
+  15% {
+    transform: translateY(0) translateX(0) scale(0%);
+    opacity: 0;
+  }
+  30% {
+    transform: translateY(0) translateX(0) scale(120%);
+    opacity: 1;
+  }
+  50% {
+    transform: translateY(0) translateX(0) scale(100%);
+    opacity: 1;
+  }
+  70% {
+    transform: translateY(0) translateX(0) scale(100%);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0) translateX(0) scale(100%);
+    opacity: 0;
+  }
+}
+.eintrag-grid .reactive-product-listing-list-item:not(.heroeintrag) .product-image-wrapper .item {
+  position: relative;
+}
 /* Pop-up */
 .rq-popover-fullscreen-wrapper {
   height: 85vh !important;
@@ -337,6 +381,45 @@ button.reuseTagSelectBtn___ {
 .eintrag-grid .kapiteleintrag .product-image-wrapper .item {
   display: none;
   margin-right: 0.5rem;
+}
+/*
+Category button
+*/
+body .mobileFilterSingleBtn__ .reactiveTypeToggleBtn___.mobileTabSearchBtn__:last-child {
+  background-color: white;
+  color: black;
+  font-size: 1.2rem;
+  height: 3.2rem;
+  box-shadow: 0px 3px 16px 0px rgba(0, 0, 0, 0.2);
+}
+body .mobileFilterSingleBtn__ .reactiveTypeToggleBtn___.mobileTabSearchBtn__:last-child:before {
+  content: "\F35C";
+}
+body .mobileFilterSingleBtn__ .reactiveTypeToggleBtn___.mobileTabSearchBtn__:last-child {
+  animation-name: slide-category-btn;
+  animation-duration: 2.4s;
+  animation-timing-function: ease;
+  animation-delay: 0s;
+  animation-iteration-count: 1;
+  animation-direction: normal;
+  animation-fill-mode: forwards;
+}
+@keyframes slide-category-btn {
+  0% {
+    transform: translateY(200px) translateX(0) scale(100%);
+  }
+  50% {
+    transform: translateY(200px) translateX(0) scale(100%);
+  }
+  75% {
+    transform: translateY(0) translateX(0) scale(100%);
+  }
+  85% {
+    transform: translateY(0) translateX(0) scale(125%);
+  }
+  100% {
+    transform: translateY(0) translateX(0) scale(100%);
+  }
 }
 /*
 Zephyr Fixes by Creanimo
