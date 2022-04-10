@@ -121,6 +121,9 @@ Start Page
 .ef-btn-stack > .wp-block-button > a:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
+.ef-btn-stack.is-vertical > .wp-block-button {
+  width: 100%;
+}
 .ef-btn-stack--small > .wp-block-button > a {
   min-height: calc(30px + 1rem);
 }
